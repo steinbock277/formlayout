@@ -1,0 +1,28 @@
+form{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-gap: 16px;
+}
+
+label{
+    grid-column: 1/2;
+    border: 3px solid burlywood;
+}
+
+input,button{
+    grid-column: 2/3;
+    border: 3px solid burlywood;
+}
+
+.radio{
+    display: flex;
+
+}
+
+.button-label {
+    display: inline-block;
+}
+
+.hidden{
+    display: none;
+}
