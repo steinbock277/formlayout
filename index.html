@@ -8,27 +8,36 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <form class="form1" action="">
-        <label for="firstName" class="first-name">First Name</label>
-        <input id="firstName" type="text">
-  
-        <label for="lastName" class="last-name">Last Name</label>
-        <input id="lastName" type="text">
-        
-        <label for="gender">Gender</label>
+    <section>
+        <h1>Personal Info</h1>
 
-        <div class="radio">
+        <h4>Hear you can view and adjust your Address</h4>
+    </section>
+    <section>
 
-            <input id="female" type="radio" class="hidden">
-            <label for="female" class="button-label"><h1>F</h1></label>
+        <form class="form1" action="">
+            <label for="firstName" class="first-name">First Name</label>
+            <input id="firstName" type="text">
+      
+            <label for="lastName" class="last-name">Last Name</label>
+            <input id="lastName" type="text">
             
-            <input id="male" type="radio" class="hidden">
-            <label for="male" class="button-label"><h1>M</h1></label>
-  
-        </div>
-        <label for="age">Age</label>
-        <input id="age" type="number">
-
-      </form>
+            <label for="gender">Gender</label>
+    
+            <div class="radio">
+    
+                <input type="radio" id="female" name="gender" value="F">
+                <label for="female"><h1>F</h1></label>
+                
+                <input type="radio" id="male" name="gender" value="M">
+                <label for="male"><h1>M</h1></label>
+      
+            </div>
+    
+            <label for="age">Age</label>
+            <input id="age" type="number">
+    
+          </form>
+    </section>
 </body>
 </html>
