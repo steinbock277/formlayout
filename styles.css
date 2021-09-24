@@ -1,14 +1,30 @@
-body{
+*{
+    box-sizing: border-box;
     font-family: 'Courier New', Courier, monospace;
 }
-form{
+
+h1::before{
+    border-top: 15px solid black;
+    content: "";
+    display: block;
+    width: 25rem;
+}
+
+fieldset{
     display: grid;
-    grid-template-columns: 200px 1fr;
+    grid-template-columns: 1fr 2fr;
     grid-gap: 16px;
+    border: 0; 
+}
+
+legend{
+    font-weight: bold;
+    margin-bottom: 25px;
 }
 
 label{
     grid-column: 1/2;
+    color: silver;
 }
 
 input{
@@ -38,7 +54,7 @@ input[type="text"]{
 
 .radio input[type="radio"] + label {
 
-    font-size:.3rem;
+    font-size:2rem;
     border: 2px solid silver;
     border-radius: 4px;
     text-align: center;
@@ -46,19 +62,10 @@ input[type="text"]{
 
 
 .radio label:hover{
-    background-color: #dfd;
+    background-color: whitesmoke;
 }
 
 .radio input[type="radio"]:checked + label {
     color: red;
     border-bottom:2px solid red;
-}
-
-section{
-    padding: 10px;
-    border-bottom: 3px solid black;
-}
-
-section:first-child{
-    border-top: 15px solid black;
 }
